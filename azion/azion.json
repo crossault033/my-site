@@ -1,0 +1,64 @@
+{
+  "name": "my-site",
+  "bucket": "my-site-20240908023843",
+  "preset": "astro",
+  "mode": "deliver",
+  "env": "production",
+  "prefix": "20240908023835",
+  "not-first-run": true,
+  "function": {
+    "id": 29178,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 27964,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1725767455,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1725764224,
+    "name": "my-site",
+    "domain_name": "xistdnmhzb.map.azionedge.net",
+    "url": "https://xistdnmhzb.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 153409,
+      "origin-key": "64421be7-4449-491a-bb86-19a9a03208f5",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 295678,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 295679,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 295680,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      },
+      {
+        "id": 295681,
+        "name": "Redirect to index.html for Subpaths",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}

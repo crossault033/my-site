@@ -19,4 +19,6 @@ pnpm-debug.log*
 .DS_Store
 
 # Astro
-.astro/
+.astro/#Paths added by Azion CLI
+.edge/
+.vulcan
